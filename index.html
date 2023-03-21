@@ -26,50 +26,39 @@
         <h2>Overview  and Purpose</h2>
         <p>In late 2015, I was in undergrad at the University of Michigan-Dearborn. One of the things I was interested in from my classes at the College of Business, was using Excel for statistics and data collection.  So, when I entered my first tournament, I decided I would start collecting data about my matches with no real goal in mind other than being able to mess around with Excel.
           This page contains some of my anecdotal results, takeaways, and findings.  Many of the graphs and charts you see on this page are dynamic and will change as the data is updated, and many of the things I write will be generalizations about the data so I won't have to keep updating this.  I'm also going to try and keep my explanations short, and only include the things I find interesting, as I could break this down month-by-month or year-by-year for each section.
-        <p><b>Environment:</b>
+        <p><b>Environment/Tools:</b>
         <p>Google Sheets: A Google Sheets workbook with all my data and charts. Data tracked: Tournament Name, Date, Location, Venue, Match Type (eg. Pools), Opponents Tag, Opponent’s Character, My Character, Stage, Game Win/Loss, Set Win/Loss.
-        <p>Google Drawings: The charts used in Sheets can be embedded in websites but the Google internals serving them don’t work well with dynamic styling.  Using Google Drawings is a neat workaround. It allows you to embed charts as images using the img tag instead of the iframe tag, while still maintaining their ability to be automatically updated with changing data. If you are interested in hearing more about this workaround, I did a write-up here.
-        <p>Github: Website is hosted on github since I’m mostly just using embeds, I only really need front-end.
+        <p>Github: Website is hosted on github. Since I’m mostly just using embeds, I only really need front-end hosting.
+        <p>Looker Studio: Looker Studio, formerly Google Data Studio, is an online tool for converting data into customizable informative reports and dashboards. I used it to make interactive data visualizations using the data from Google Sheets, which I then embedded into my website.
+        <p><b>Deprecated Environment/Tools:</b>
+        <p>Google Drawings: The charts used in Sheets can be embedded in websites but the Google internals serving them don’t work well with dynamic styling.  Using Google Drawings is a neat workaround. It allows you to embed charts as images using the img tag instead of the iframe tag, while still maintaining their ability to be automatically updated with changing data.
+        <p>Google Scripts: I made a small widget to display data based on certain criteria so that the google sheet is not accessible to everyone.
+
         <p><b>Known Issues:</b>
         Google Drive’s internals are known for causing issues with government/corporate firewalls.  If you are having trouble loading some of the graphs and charts on this page at work, then that could be the cause.  The other thing is that this website is hosted on Github so there's no SSL certificate and might be blocked by your browser, but if this is the case then you can’t read this anyway.
       </div>
 
       <div id="tournamentdata">
         <h2>Tournament Data</h2>
-          <figure class="right">
-          <img src="https://docs.google.com/drawings/d/e/2PACX-1vSvufjnmhhcXy7W6aeLlcsA5410xM0Kn7R0t6nSFprfJrRckyoHkCNMg-0BM7D2-Kyl9ekXmqzKODUA/pub?w=271&amp;h=269">
-          <figcaption>Fig. 1 - Tournaments Entered</figcaption>
-          </figure>
-
-          <p>If you're a part of the Melee scene you've likely heard my origin many times before.  In 2015, I started my journey in competitive <a href="https://www.ssbwiki.com/Super_Smash_Bros._Melee_in_competitive_play">Super Smash Brothers Melee (2001)</a>.  Since I was now mostly done with competitive sports, and in college, I had a competitive void to fill.  Then, I happened to watch <a href="https://www.youtube.com/watch?v=NSf2mgkRm7Q&list=PLoUHkRwnRH-IXbZfwlgiEN8eXmoj6DtKM">The Smash Brothers</a> documentary and decided to give it a shot.  My first tournament set ever was actually a doubles set with my brother against KJH and Kalamazhu, two regionally ranked players at the time.  You could probably guess how that went.  If you've ever seen me get on my phone after a tournament match, you likely saw me record the data from the match I just played.
+          <p>If you're a part of the Melee scene you've likely heard my origin many times before.  In 2015, I started my journey in competitive <a href="https://www.ssbwiki.com/Super_Smash_Bros._Melee_in_competitive_play">Super Smash Brothers Melee (2001)</a>.  Since I was now mostly done with competitive sports, and in college, I had a competitive void to fill.  Then, I happened to watch <a href="https://www.youtube.com/watch?v=NSf2mgkRm7Q&list=PLoUHkRwnRH-IXbZfwlgiEN8eXmoj6DtKM">The Smash Brothers</a> documentary and decided to give it a shot. If you've ever seen me get on my phone after a tournament match, you likely saw me record the data from the match I just played.
           My first tournament set ever was actually a doubles set with my brother against <a href="https://liquipedia.net/smash/KJH">KJH</a> and <a href="https://liquipedia.net/smash/Kalamazhu">Kalamazhu</a>, two regionally ranked players at the time.
           You could probably guess how that went.
-          My first tournament set ever was actually a doubles set with my brother against KJH and Kalamazhu, two regionally ranked players at the time.  You could probably guess how that went.  If you've ever seen me get on my phone after a tournament match, you likely saw me record the data from the match I just played.
       </div>
 
-        <figure class="center">
-        <img src="https://docs.google.com/drawings/d/e/2PACX-1vTyokkgFpV1qqv0su2dl-vvupXWZd4ADuZSAJ4KpOflKP-2H9rak74NxI8P9mit2aAVr9Y3yMlai23j/pub?w=1440&amp;h=598">
-        <figcaption>Fig. 2 - Tournaments Entered Per Month</figcaption>
-        </figure>
+    <iframe src="https://lookerstudio.google.com/embed/reporting/ffc1e388-b32f-4ef4-808f-4f0eb3e54ab6/page/ncEFD" frameborder="0" style="border:0" allowfullscreen></iframe>
 
       <div>
-          <figure class="right">
-          <img class="right" src="https://docs.google.com/drawings/d/e/2PACX-1vQNJ5Bv-juzIeGDNgVv8lnGPAXdwM4KV7CAwYdbQEJS_e4rYhFU-K-AC5wbgWyPVi9fVIt_jN7owQUI/pub?w=675&amp;h=229">
-          <figcaption>Fig. 3 - Tournaments Where I Played the Most Sets</figcaption>
-          </figure>
-          <p>Figure 2 shows the frequency of tournaments that I attended per month, throughout my career.  I think I probably entered events more frequently than the average player.  The only real trends to note here are that there were spikes of frequency in the first few summers, and also the graph tends to decline over time with the popularity of the game.  Melee has had wild swings of popularity over the years, and as demand for the game rises or falls, the number of events held will follow the trend.  Most people think the game's popularity peaked in 2016 but there has been another spike in popularity recently with the ease of online play in the COVID era. The only other thing to mention is that I discovered that weekly tournaments existed in spring/summer 2016, and then decided to go to many tournaments over the summer.  Melee tournaments have historically been advertised on Facebook, which was a platform I didn't use at the time.
-          <p>Figure 3 shows the five tournaments where I played the most sets. These should be tournaments that I did well at, along with tournaments hosted in Jackson, and Brighton, because they have a tournament organizer (Coin) who likes to use experimental tournament formats, resulting in more sets than the average tournament.  This is also shown in Figure 5, where Jackson is the region I have played the most sets per tournament by far (of the top regions for attendance).
+          <p>This next slide shows the frequency of tournaments that I attended per month, throughout my career.  I think I probably entered events more frequently than the average player.  The only real trends to note here are that there were spikes of frequency in the first few summers, and also the graph tends to decline over time with the popularity of the game.  Melee has had wild swings of popularity over the years, and as demand for the game rises or falls, the number of events held will follow the trend.  Most people think the game's popularity peaked in 2016 but there has been another spike in popularity recently with the ease of online play in the COVID era. The only other thing to mention is that I discovered that weekly tournaments existed in spring/summer 2016, and then decided to go to many tournaments over the summer.  Melee tournaments have historically been advertised on Facebook, which was a platform I didn't use at the time.
       </div>
 
-        <figure class="full">
-          <img width="650px" height="400px" src="https://docs.google.com/drawings/d/e/2PACX-1vQprgyagRwZiuLt3VZFBWlmIrCKj9_tSPLqkvJp4lyLEY5tJZN_qcCpPT4NdIUSRVG0Bvsrty8GmdlA/pub?w=1440&amp;h=513">
-          <figcaption>Fig. 4 - Tournaments entered by Region</figcaption>
-        </figure>
-        <figure class="full">
-          <img width="650px" height="400px" src="https://docs.google.com/drawings/d/e/2PACX-1vQpvW8W4dz-jNKuUEIkujMW08XRdCiEf0wT3nP7U_TV_n1dbISjYJ7IpgMYN6E7aVBA9Nv5Mb4Z1JfY/pub?w=703&amp;h=513">
-          <figcaption>Fig. 5 - Sets Per Tournament By Region</figcaption>
-        </figure>
+    <iframe src="https://lookerstudio.google.com/embed/reporting/ffc1e388-b32f-4ef4-808f-4f0eb3e54ab6/page/p_wd65c57d4c" frameborder="0" style="border:0" allowfullscreen></iframe>
 
+        <div>
+            <p>This slide shows the cities where I most frequently attended tournaments.  Most of them in South-East Michigan, but Ann Arbor is heavily represented due to its large college scene that regulary hosts events.
+              Also included in this slide are the tournaments where I played the most sets. These tournaments should be ones that I did well at (since in double elim format, the better you do the more sets you play generally), as well as tournaments hosted in Jackson, and Brighton, due to their tournament organizer (Coin) who liked to use experimental tournament formats, resulting in more sets than the average tournament.  Jackson is likely to remain one of the regions where I average the most sets played per tournament.
+        </div>
+    <iframe src="https://lookerstudio.google.com/embed/reporting/ffc1e388-b32f-4ef4-808f-4f0eb3e54ab6/page/p_umc5a1zd4c" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </br></br>
 
         <table id="ttypes">
           <tr>
@@ -106,101 +95,48 @@
           </tr>
         </table>
 
-        <figure class="full">
-        <img width="650px" src="https://docs.google.com/drawings/d/e/2PACX-1vSHuSQqfXyzNUqMaJd8xTbFNxZEBsVtpMPEp2qVQaqYAuLFMLwW2_MVwotkbgkTdGwu0WrppBPNfwvz/pub?w=1441&amp;h=512">
-        <figcaption>Fig. 6 - Tournaments Entered By Type</figcaption>
-        </figure>
-        <figure class="full">
-        <img width="650px" src="https://docs.google.com/drawings/d/e/2PACX-1vQhQUJImlLaf5jTEJ2dSnSZaTOy-zb0Cy_88sVUb_2vTRUi1wMjQcF2mfN--YplRd0uvtcd5x2EnXD1/pub?w=689&amp;h=514">
-        <figcaption>Fig. 7 - Sets Per Tournament Type</figcaption>
-        </figure>
+        </br></br>
+
+        <iframe src="https://lookerstudio.google.com/embed/reporting/ffc1e388-b32f-4ef4-808f-4f0eb3e54ab6/page/p_njd1wv892c" frameborder="0" style="border:0" allowfullscreen></iframe>
 
 
     <div style="clear: both;"></div>
       <div id="improvement">
         <h2>Improvement</h2>
-        <figure class="right">
-        <img height="300px" width="300px" src="https://docs.google.com/drawings/d/e/2PACX-1vRVFmxNDdR_58ZwyzrB6asm9dToMlUEHaOSbkm9_uWq9gNairwgko36X3SkUxmVdmylhYzI0Gm5FOrS/pub?w=602&amp;h=864">
-        <figcaption>Fig. 9 - Total Sets Played</figcaption>
-        </figure>
-        <figure class="right">
-        <img height="300px" width="300px" src="https://docs.google.com/drawings/d/e/2PACX-1vRRGQgVniQaHVJIx9wgaal2120tLJcvrPA-V6JyIsXng0cDR48D9ZOY42dLt3EN7UllkrqHVrMow40L/pub?w=401&amp;h=272">
-        <figcaption>Fig. 8 - All-Time Set Win %</figcaption>
-        </figure>
-        <p>Improvement was something I was very interested in tracking since improvement in this game is more noticeable on a bi-weekly basis than any other competitive endeavor I've tried.  The two most important metrics for tracking improvement that I've found are: Sets Played Per Tournament (shown in Fig. 10) and Win % Over Time (shown in Fig 12). Neither of these metrics are perfect, in fact they might only be usable due to the consistency and frequency that I went to tournaments.  The reasoning behind including "Sets Played Per Tournament" as an improvement metric is that if I'm playing more sets per tournament, then I'm making it further and further in the tournament on average.  This isn't always the case since not every tournament is double elimination bracket. There are many different bracket formats that all guarantee different amounts of matches played.  I recommend looking mostly at the trendline overall and not really at the month-to-month variance.
+        <p>Improvement was something I was very interested in tracking since improvement in this game is more noticeable on a bi-weekly basis than any other competitive endeavor I've tried.  The two most important metrics for tracking improvement that I've found are: Sets Played Per Tournament and Win % Over Time. Neither of these metrics are perfect, in fact they might only be usable due to the consistency and frequency that I went to tournaments.  The reasoning behind including "Sets Played Per Tournament" as an improvement metric is that if I'm playing more sets per tournament, then I'm making it further and further in the tournament on average.  This isn't always the case since not every tournament is double elimination bracket. There are many different bracket formats that all guarantee different amounts of matches played.
         <p>It's also worth noting that I stopped entering in-person events in Feb-2020 due to COVID, but I continued to enter online tournaments without tracking the data.  <a href="https://www.pgstats.com/melee/player/Rich?id=S36330">PGstats</a>, a website that pulls tournament data from <a href="https://smash.gg/">smash.gg</a> has me at a 68% win rate from the period of Mar-2020 to Mar-2022, a win rate that is still roughly following the trendline.
-        </div>
-        <div style="clear: both;"></div>
-        <figure class="center">
-        <img src="https://docs.google.com/drawings/d/e/2PACX-1vSRoicsfXj5dJS8caYHLRq_i8ku3KvyIvjzEKHa3iE0Xf3ifFAIy5cVHcQ2xXcrKiAT88f5LnaiSm52/pub?w=1441&amp;h=657">
-        <figcaption>Fig. 10 - Sets Played Per Tournament over Time</figcaption>
-        </figure>
-        <figure class="center">
-        <img src="https://docs.google.com/drawings/d/e/2PACX-1vSVgOJje1PQxwC3vhv5gclRdQlJfPbNNvAGiVZr-upEs2Fju_vvNjMFrMT2HWDV_THDrFHXkR5rSx_P/pub?w=1440&amp;h=678">
-        <figcaption>Fig. 11 - Sets Played vs Tournaments Entered over Time</figcaption>
-        </figure>
-        <figure class="center">
-        <img src="https://docs.google.com/drawings/d/e/2PACX-1vQJjmuwXwRwWu_CJEK_PRQN5H47KIRdQTg3aqTj-9ujNQVjsrlP4pxZj5t6F5EeqMu71OmKCcN4sr0i/pub?w=1440&amp;h=727">
-        <figcaption>Fig. 12 - Set Win % over Time</figcaption>
-        </figure>
+      </div>
+
+      <iframe src="https://lookerstudio.google.com/embed/reporting/ffc1e388-b32f-4ef4-808f-4f0eb3e54ab6/page/p_98ef0kj92c" frameborder="0" style="border:0" allowfullscreen></iframe>
 
       <div style="clear: both;"></div>
       <div id="stagedata">
         <h2>Stage Data</h2>
         <p>Up until this point all the data was based on sets, but now we will be introducing game stats.  Competitive melee is usually based on "Best of 3" or "Best of 5" sets, where each game could be played with a different character on a different stage in the game.  It is now important to note that the character I play is <a href="https://www.ssbwiki.com/Falco_(SSBM)">Falco</a>.
-        <p>Figure 13 shows the percentage of my total games played on each stage.  Battlefield and Yoshi's Story make up a large percentage of my games.  This is because Battlefield is Falco's most common neutral starting stage against most characters.  Yoshi's Story is a common starting stage against two very common characters: Fox and Captain Falcon, as well as on of Falco's most common <a href="https://www.ssbwiki.com/Stage_legality">counterpick</a> stages.
-        <p>Fig(s) 14-19 show my win percentage on each stage.  As stated earlier, Yoshi's Story is typically seen as a good stage for Falco, though I'm not sure why Fountain of Dreams is so high.  It might just suit my strengths as a player.
+        <p>This next slide shows the percentage of my total games played on each stage.  Battlefield and Yoshi's Story make up a large percentage of my games.  This is because Battlefield is Falco's most common neutral starting stage against most characters.  Yoshi's Story is a common starting stage against two very common characters: Fox and Captain Falcon, as well as on of Falco's most common <a href="https://www.ssbwiki.com/Stage_legality">counterpick</a> stages.
+        <p>This slide also shows the stage breakdown by character.  As stated earlier, Yoshi's Story is typically seen as a good stage for Falco, though I'm not sure why Fountain of Dreams is so high.  It might just suit my strengths as a player.
       </div>
-      <figure class="full">
-      <img src="https://docs.google.com/drawings/d/e/2PACX-1vToHXR1TCqAsBy1yA9uCvL0Ghl4H8KkDpUcP_YGWIE-E-OqpDob_uXIsA24bcrDOkoA2eEfJwWUdk3n/pub?w=720&amp;h=1016">
-      <figcaption>Fig. 13 - Stage Distrobution (Games Played on Each Stage)</figcaption>
-      </figure>
-      <figure class="full">
-      <img src="https://docs.google.com/drawings/d/e/2PACX-1vTZbqizQ4uGCNyxFRsCCe-OIsjQa8QHP3fnCAmCTSsQdTySvIWg7Qyf4zt2tqCjZv9rxAEf0jH6G4yP/pub?w=920&amp;h=489">
-      <figcaption>Fig. 20 - Wins, Losses, Games Played on Each Stage</figcaption>
-      </figure>
-        <figure class="stages">
-        <img src="https://docs.google.com/drawings/d/e/2PACX-1vRH5l37PbiuNHHtwVVMAeUlK9PI9iKGliuOApRF62NY2FUnLQfLGllMHiV_Hw3H8IelmuGrqf5RKvbX/pub?w=1441&amp;h=612">
-        <figcaption>Fig. 14-19 - Game Win % on Each Stage</figcaption>
-        </figure>
+
+      <iframe src="https://lookerstudio.google.com/embed/reporting/ffc1e388-b32f-4ef4-808f-4f0eb3e54ab6/page/p_57fv8w892c" frameborder="0" style="border:0" allowfullscreen></iframe>
 
       <div style="clear: both;"></div>
       <div id="characterdata">
         <h2>Character Data</h2>
-        <figure class="left">
-        <img width="600px" src="https://docs.google.com/drawings/d/e/2PACX-1vR3tR3pwm0kffVZyygiA0CEOrJo7qh56TFi96N6mIzcynP36cR2qUUvqobKGOT3MuVp6W-mcppu1HU-/pub?w=936&amp;h=832">
-        <figcaption>Fig. 23 - Game Win % by Character Against by Stage</figcaption>
-        </figure>
-        <p>One of the more interesting things from my data collection is the distribution of characters that I've played against. As shown in Fig 21, Fox, Falco, and Marth account for over 50% of games played.  This can be used as a moderately accurate way to gauge the character distribution of the general competitive melee population.  This pie chart contains every character in the game even though you can't really see most of them.  There are still some characters that I've never played against in a tournament.
-        <p>Figure 22 shows my win percent versus each relevant character.  You can't really use this information to develop a matchup spread for Falco.  Honestly this chart mostly just reflects my strong and weak matchups as a player, with some exceptions, like my Ice Climbers win percentage being skewed from one of my most played opponents being an Ice Climbers player (shown later in Fig 24).
-        <p>Fig 23 shows my win percent against every character (where there was enough data) on each stage.  I didn't include Yoshi because there have still been stages that I haven't played on, if that gives you an idea of what the lesser picked characters' data looks like.  In matchups with less impactful counterpicks, the win percent is actually the opposite of what you would expect.  If I'm the one stage counterpicking then that means I have already lost a game.  So against people better than me, I'm playing more often on my counterpick stages, thus more likely to lose, and the reverse applies to my opponents counterpicks.  There are some exceptions, notably Final Destination vs Peach and IC's.  Keep in mind these win percentages are from Falco's perspective.
+        <p>One of the more interesting things from my data collection is the distribution of characters that I've played against. As shown in the doughnut chart, Fox, Falco, and Marth account for over 50% of games played.  This can be used as a moderately accurate way to gauge the character distribution of the general competitive melee population.  This pie chart contains every character in the game even though you can't really see most of them.  There are still some characters that I've never played against in a tournament.
+        <p>This slide shows my win percent versus each character that I've played against.  You can't really use this information to develop a matchup spread for Falco.  Honestly this chart mostly just reflects my strong and weak matchups as a player, with some exceptions, like my Ice Climbers win percentage being skewed from one of my most played opponents being an Ice Climbers player (shown later Head-to-Head Records).
+        <p>This slide also shows my win percent against every character on each stage.  In matchups with less impactful counterpicks, the win percent is actually the opposite of what you would expect.  If I'm the one stage counterpicking then that means I have already lost a game.  So against people better than me, I'm playing more often on my counterpick stages, thus more likely to lose, and the reverse applies to my opponents counterpicks.  There are some exceptions, notably Final Destination vs Peach and IC's.  Keep in mind these win percentages are from Falco's perspective.
         </div>
-          <figure class="full">
-          <img src="https://docs.google.com/drawings/d/e/2PACX-1vR9jqS400V_IIOM5fpyx99xM-uDHSfZu0NRT8kM0SonxRNb23rqMMtZBGcA5Y3OYhZDj7MYX7xbLIOQ/pub?w=760&amp;h=500">
-          <figcaption>Fig. 22 - Game Win % vs Each Character</figcaption>
-          </figure>
-          <figure class="full">
-          <img width="650px" height="400px" src="https://docs.google.com/drawings/d/e/2PACX-1vSgpabj1q6j-wjCI4kwk8IaLvIxniXqqnDxzXgPqZepIRB7f7S-Q9b7JlrQgiYtYG0hyAVgOVp3dy7b/pub?w=758&amp;h=1083">
-          <figcaption>Fig. 21 - Character Distribution (Games Played vs Each Character)</figcaption>
-          </figure>
+
+        <iframe src="https://lookerstudio.google.com/embed/reporting/ffc1e388-b32f-4ef4-808f-4f0eb3e54ab6/page/p_f6bdqx892c" frameborder="0" style="border:0" allowfullscreen></iframe>
 
       <div style="clear: both;"></div>
       <div id="h2h">
         <h2>Head to Head Records</h2>
-        <p>This chart (Figure 24) shows my most played opponents sorted by number of sets played.  This may differ from this chart sorted by games played since in melee there is not a fixed number of games played in a set, instead, each set can be anywhere from 2 to 5 games played. The players in this chart are players that I routinely ran into at tournaments.  Since certain players end up making it further in bracket consistently, it's not surprising to see most of the people on this list have a winning record against me, seeing as though I would eventually play them if I made it far enough.</p>
+        <p>This chart shows my most played opponents sorted by number of sets played.  This may differ from this chart sorted by games played since in melee there is not a fixed number of games played in a set, instead, each set can be anywhere from 2 to 5 games played. The players in this chart are players that I routinely ran into at tournaments.  Since certain players end up making it further in bracket consistently, it's not surprising to see most of the people on this list have a winning record against me, seeing as though I would eventually play them if I made it far enough.</p>
       </div>
-      <div class="h2h">
-      <figure>
-        <iframe
-          allowtransparency="yes"
-          title="Win % vs Characters by Stage"
-          src="https://script.google.com/macros/s/AKfycbw0jEK7BTejvznxu8P02hfQV0hCeJzz_5mdB106uGMxEiUe268Ne5YbPfFIjQLjcoaL/exec"
-          frameborder="0"
-          scrolling="yes">
-        </iframe>
-        <figcaption>Fig. 24 - Head-to-Head Records by Most Played Opponents</figcaption>
-      </figure>
-    </div>
+
+        <iframe src="https://lookerstudio.google.com/embed/reporting/ffc1e388-b32f-4ef4-808f-4f0eb3e54ab6/page/p_m3l3ly892c" frameborder="0" style="border:0" allowfullscreen></iframe>
+
 
       <div style="clear: both;"></div>
       <div id="futurework">
